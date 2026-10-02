@@ -3,9 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Claiza Faith Junia - Personal Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #d85636;
+            --secondary: #83f06e;
+            --accent: #e3f2fd;
+            --dark: #263238;
+            --light: #f5f7fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Times New Roman', Times, serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        .main-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(13, 71, 161, 0.12);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .page-header {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 17px;
+            opacity: 0.9;
+        }
+
+        /* Content */
+        .page-body {
+            padding: 35px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Personal Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px 25px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-size: 15px;
+            color: #37474f;
+        }
+
+        .about-text {
+            font-size: 16px;
+            color: #37474f;
+            line-height: 1.8;
+        }
+
+        /* Education Table */
+        .edu-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .edu-table th {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 14px 18px;
+            text-align: left;
+            font-size: 15px;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .edu-table td {
+            padding: 14px 18px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 15px;
+        }
+
+        .edu-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .level {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .current-row {
+            background: #eef5ff;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer-note {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .edu-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-       <h1>Student_Profile_Interface</h1>
+    <div class="main-wrapper">
+        <!-- HEADER -->
+        <header class="page-header">
+            <h1>Claiza Faith Junia</h1>
+            <p class="tagline">Third-Year BSIT Student | EVSU-Dulag Campus</p>
+        </header>
+
+        <main class="page-body">
+            
+            <section class="section">
+                <h2 class="section-title">Personal Information</h2>
+                <!-- PERSONAL INFORMATION -->
+            </section>
+
+            
+            <section class="section">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I am currently a third-year student pursuing a Bachelor of Science in Information Technology at EVSU-Dulag. I am passionate about learning and developing knowledge and skills, especially in programming and other related fields of technology. I am dedicated to growing as an IT professional and building a strong foundation for my future career.
+                </p>
+            </section>
+
+            
+            <section class="section">
+                <h2 class="section-title">Educational Background</h2>
+                <!-- EDUCATIONAL BACKGROUND -->
+            </section>
+
+            
+            <p class="footer-note">
+                📝 Draft — Prepared October 2026
+            </p>
+        </main>
+    </div>
 </body>
 </html>
