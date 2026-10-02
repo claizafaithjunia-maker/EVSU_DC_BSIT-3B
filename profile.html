@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #ff7a58;
+            --secondary: #5eee5e;
+            --accent: #e3f2fd;
+            --dark: #263238;
+            --light: #f5f7fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Times New Roman', Times, serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        .profile-wrapper {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(13, 71, 161, 0.12);
+            overflow: hidden;
+        }
+
+        .page-header {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 30px 35px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .page-body {
+            padding: 35px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px 25px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-size: 15px;
+            color: #37474f;
+        }
+
+        .divider {
+            grid-column: 1 / -1;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 8px 0;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-wrapper">
+        <header class="page-header">
+            <h1>Personal Profile</h1>
+        </header>
+
+        <main class="page-body">
+            <h2 class="section-title">Personal Information</h2>
+            <div class="info-grid">
+                <div>
+                    <span class="info-label">Date of Birth:</span>
+                    <span class="info-value">June 12, 2005</span>
+                </div>
+                <div>
+                    <span class="info-label">Place of Birth:</span>
+                    <span class="info-value">Catmonan</span>
+                </div>
+                <div>
+                    <span class="info-label">Religion:</span>
+                    <span class="info-value">Catholic</span>
+                </div>
+                <div>
+                    <span class="info-label">Language:</span>
+                    <span class="info-value">Waray-Waray</span>
+                </div>
+                <div>
+                    <span class="info-label">Sex:</span>
+                    <span class="info-value">Female</span>
+                </div>
+                <div>
+                    <span class="info-label">Height:</span>
+                    <span class="info-value">141 cm</span>
+                </div>
+                <div>
+                    <span class="info-label">Weight:</span>
+                    <span class="info-value">45 kg</span>
+                </div>
+                <div>
+                    <span class="info-label">Citizenship:</span>
+                    <span class="info-value">Filipino</span>
+                </div>
+                <div>
+                    <span class="info-label">Civil Status:</span>
+                    <span class="info-value">Single</span>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div>
+                    <span class="info-label">Father:</span>
+                    <span class="info-value">Nomeriano R. Redoban</span>
+                </div>
+                <div>
+                    <span class="info-label">Mother:</span>
+                    <span class="info-value">Miraffe P. Villareal</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
